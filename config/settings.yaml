@@ -1,0 +1,18 @@
+model:
+  name: yolov8n.pt
+  confidence_threshold: 0.5
+  device: cpu
+
+video:
+  source: 0  # 0 = webcam, o ruta a un video
+  width: 640
+  height: 480
+
+lighting:
+  default_intensity: 100
+  oncoming_vehicle_intensity: 30
+  pedestrian_intensity: 60
+
+logging:
+  level: INFO
+  file: logs/system.log
