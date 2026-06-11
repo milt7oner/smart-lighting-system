@@ -24,7 +24,17 @@ and improving pedestrian safety.
 
 ## Status
 🚧 Active development — Week 1 of 4
+## Performance Benchmarks
 
+> Measured on laptop CPU (steady state, 10 runs average)
+
+| Model | Format | Size | Avg Inference | Min | Max |
+|-------|--------|------|---------------|-----|-----|
+| YOLOv8n | FP32 (.pt) | 6.23 MB | 66.1 ms | 60.4 ms | 76.5 ms |
+| YOLOv8n | INT8 (.tflite) | 3.34 MB | TBD on RPi | - | - |
+
+> Raspberry Pi 4 benchmarks coming after hardware deployment.
+> Target: < 200ms avg inference on edge hardware.
 ## Roadmap
 - [x] Project structure and configuration
 - [ ] Object detection module with YOLOv8
